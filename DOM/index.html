@@ -8,27 +8,30 @@
   <body>
     <h1>Basic calculator</h1>
 
-    <input type="radio" name="operations" id="addition" />
-    <label for="addition">Addition</label>
-    <input type="radio" name="operations" id="subtraction" />
-    <label for="subtraction">Subtraction</label>
-    <input type="radio" name="operations" id="multiplication" />
-    <label for="multiplication">Multiplication</label>
-    <input type="radio" name="operations" id="division" />
-    <label for="division">Division</label>
+    <form id="form">
+      <input type="radio" name="operations" id="addition" />
+      <label for="addition">Addition</label>
+      <input type="radio" name="operations" id="subtraction" />
+      <label for="subtraction">Subtraction</label>
+      <input type="radio" name="operations" id="multiplication" />
+      <label for="multiplication">Multiplication</label>
+      <input type="radio" name="operations" id="division" />
+      <label for="division">Division</label>
 
-    <br />
-    <br />
+      <br />
+      <br />
 
-    <input id="input1" type="number" placeholder="Type the first number" />
-    <input id="input2" type="number" placeholder="Type the second number" />
+      <input id="input1" type="number" placeholder="Type the first number" />
+      <input id="input2" type="number" placeholder="Type the second number" />
 
-    <br />
-    <br />
+      <br />
+      <br />
 
-    <button id="calculate-button" onclick="calculate()">Calculate</button>
+      <!-- <button id="calculate-button" type="button">Calculate</button> -->
+      <button id="calculate-button">Calculate</button>
 
-    <p id="result"></p>
+      <p id="result"></p>
+    </form>
 
     <script src="./main.js"></script>
   </body>
