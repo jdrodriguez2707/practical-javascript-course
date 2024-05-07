@@ -1,18 +1,28 @@
 const title = document.querySelector("h1");
-const paragraphs = document.querySelectorAll("p");
-// const paragraphWithClass = document.querySelector(".paragraph");
-const paragraphWithClass = document.getElementsByClassName("paragraph");
-// const paragraphWithClass = document.querySelector("#paragraph");
-const paragraphWithId = document.getElementById("paragraph");
-const inputText = document.querySelector("input");
+// title.innerHTML = 'God is good <br> All the time'
+title.innerText = "God is good all the time";
 
-console.log(title);
-console.log(inputText.value);
+const paragraph = document.querySelector("p");
+console.log(paragraph.getAttribute("attribute"));
+paragraph.setAttribute("attribute", "Faith");
+console.log(paragraph.getAttribute("attribute"));
 
-console.log({
-  title,
-  paragraphs,
-  paragraphWithClass,
-  paragraphWithId,
-  inputText
-});
+const paragraphWithClass = document.querySelector(".paragraph");
+paragraphWithClass.classList.add("new", "hello");
+paragraphWithClass.classList.remove("new", "hello");
+console.log(paragraphWithClass.classList.contains("paragraph"));
+
+const input = document.querySelector("input");
+input.value = "1234";
+
+const image = document.createElement("img");
+console.log(image);
+image.setAttribute(
+  "src",
+  "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+);
+const paragraphWithId = document.querySelector("#paragraph");
+// paragraphWithId.replaceWith(image)
+paragraphWithId.append(image);
+
+// paragraphWithId.innerHTML = `<img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="A cute dog">`;
