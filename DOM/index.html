@@ -6,11 +6,16 @@
     <title>Basic DOM manipulation - Practical JavaScript course</title>
   </head>
   <body>
-    <h1>Basic DOM manipulation</h1>
-    <p attribute="God bless you" >This is a paragraph</p>
-    <p class="paragraph">This is a paragraph with a class</p>
-    <p id="paragraph">This is a paragraph with an id</p>
-    <input type="text" placeholder="Type here" value="123456789" />
+    <h1>Number addition</h1>
+    <input id="input1" type="number" placeholder="Type the first number" />
+    <input
+      id="input2"
+      type="number"
+      onchange="console.log('input changed')"
+      placeholder="Type the second number"
+    />
+    <button id="calculate-button" onclick="addNumbers()">Calculate</button>
+    <p id="result"></p>
 
     <script src="./main.js"></script>
   </body>
