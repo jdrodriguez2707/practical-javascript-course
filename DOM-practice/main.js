@@ -1,15 +1,8 @@
-const title = document.getElementsByTagName("h1");
-const paragraph = document.getElementsByTagName("p");
-const paragraphWithClass = document.getElementsByClassName("paragraph");
-const paragraphWithId = document.getElementById("paragraph");
-const input = document.getElementsByName("user-id");
+const input1 = document.querySelector("#input1");
+const input2 = document.querySelector("#input2");
+const additionButton = document.querySelector("#addition-button");
+const result = document.getElementById("result");
 
-console.log(input.value);
-
-console.log({
-  title,
-  paragraph,
-  paragraphWithClass,
-  paragraphWithId,
-  input,
-});
+function addNumber() {
+  result.innerText = `The result is: ${+input1.value + +input2.value}`;
+}
