@@ -39,7 +39,7 @@ let [monday, tuesday, wednesday, thursday, ...weekend] = daysOfWeek;
 6. Project: Basic Calculator
    - Creation of a basic calculator that allows the user to select the desired operation and input the numbers to operate. The result is dynamically displayed on the page.
 
-![Basic Calculator](./DOM/images/Screenshot%202024-05-16%20092444.png)
+![Basic Calculator](./images/Screenshot%202024-05-16%20092444.png)
 
 Thank you for checking out this repository! If you have any questions or suggestions, feel free to create an issue or [contact me](https://twitter.com/Johan79854000).
 
