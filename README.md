@@ -12,6 +12,19 @@ Welcome to the repository of the Practical JavaScript Course by Platzi! In this 
    - Functions
 
 2. Array and Object Destructuring
+```js
+const daysOfWeek = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
+
+let [monday, tuesday, wednesday, thursday, ...weekend] = daysOfWeek;
+```
 
 3. Basic DOM Manipulation:
    - Reading HTML from JavaScript using methods like `querySelector`, `querySelectorAll`, `getElementById`, etc.
@@ -26,6 +39,8 @@ Welcome to the repository of the Practical JavaScript Course by Platzi! In this 
 6. Project: Basic Calculator
    - Creation of a basic calculator that allows the user to select the desired operation and input the numbers to operate. The result is dynamically displayed on the page.
 
-Thank you for checking out this repository! If you have any questions or suggestions, feel free to create an issue or contact me.
+![Basic Calculator](./DOM/images/Screenshot%202024-05-16%20092444.png)
+
+Thank you for checking out this repository! If you have any questions or suggestions, feel free to create an issue or [contact me](https://twitter.com/Johan79854000).
 
 Happy coding! 😊🚀
